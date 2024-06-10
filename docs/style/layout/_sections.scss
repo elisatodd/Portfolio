@@ -52,3 +52,35 @@ section {
     width: 100%;
   }
 }
+
+#navbar {
+  background-image: linear-gradient(to right, #3366ff, #ff66cc); /* Color de fondo */
+  padding: 30px 0; /* Espaciado interno */
+  text-align: center; /* Alineación de texto */
+}
+
+#navbar ul {
+  list-style-type: none; /* Quita los puntos de lista */
+  margin: 0;
+  padding: 0;
+}
+
+#navbar li {
+  display: inline-block; /* Muestra los elementos en línea */
+  margin-right: 20px; /* Espaciado entre elementos */
+}
+
+#navbar li:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último elemento */
+}
+
+#navbar a {
+  color: $header-text; /* Color del texto */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  font-size: 30px; /* Tamaño del texto */
+  font-weight: bold; /* Peso de la fuente */
+}
+
+#navbar a:hover {
+  color:$header-hover; /* Cambia el color del texto al pasar el ratón */
+}

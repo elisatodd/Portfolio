@@ -18,13 +18,13 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>Eli Todd | Video Game Programmer</title>
+    <title>Eli Todd | Programmer and Technical Artist</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
     <meta name="keywords" content="elisatodd, Elisa Todd, C++, C#, Unity, Blender, Python" />
 
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Eli Todd | Video Game Programmer" />
+    <meta name="description" content="Eli Todd | Programmer and Technical Artist" />
 
     <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
     <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
@@ -37,9 +37,9 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Fill content with the URL of this portfolio you'll host -->
     <meta property="og:url" content="https://devfolio.js.org/" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
+    <meta property="og:title" content="Eli Todd | Programmer and Technical Artist" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
+    <meta property="og:description" content="Videogame programmer and Technical Artist" />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
@@ -52,11 +52,11 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Again fill content attr with the URL of this portfolio you'll host -->
     <meta property="twitter:url" content="https://devfolio.js.org" />
     <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <meta property="twitter:title" content="Eli Todd | Programmer and Technical Artist" />
     <!-- short description that shows up while your portfolio is shared -->
     <meta
       property="twitter:description"
-      content="Made using DevFolio Template"
+      content="Videogame programmer and Technical Artist"
     />
     <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
     <meta
@@ -101,13 +101,23 @@ Have fun creating your portfolio on this template!!! -->
     <!-- End of Google Analytics -->
   </head>
   <body>
+    <!-- Navbar with index -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
         <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Eli Todd</span>
+          <span class="text-color-main name">Eli Todd's Portfolio</span>
           <br />
-          I'm a Video Game Programmer and Developer.
+          Video Game Programmer and Developer
+          <br />
         </h1>
         <p class="hero-cta">
           <a class="cta-btn cta-btn--hero" href="#about">Discover my work</a>
@@ -124,7 +134,7 @@ Have fun creating your portfolio on this template!!! -->
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
-          <div class="about-wrapper__image">
+          <!-- <div class="about-wrapper__image">
             <img
               class="img-fluid"
               src="./assets/profile1.jpg"
@@ -132,10 +142,11 @@ Have fun creating your portfolio on this template!!! -->
               width="450"
               height="350"
             />
-          </div>
+          </div> -->
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Hi! My name is Eli. I'm a Video Game programmer from Spain. I took my university degree in Video Game Development in the Complutense University of Madrid.
+              Hi! My name is Eli. I'm a Video Game programmer from Spain. I took my university degree in Video Game Development in the Complutense University of Madrid. 
+              I specialize in technical art and tool development.
             </p>
             <p class="about-wrapper__info-text">
               I have participated in several projects during my university years, and now I'm looking forward to specializing in becoming a Technical Artist.
@@ -156,6 +167,37 @@ Have fun creating your portfolio on this template!!! -->
           <h2 class="section-title dark-blue-text">Projects</h2>
 
           <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Blender to Unity material export Add-on</h3>
+              <p class="project-wrapper__text-info">
+                Blender add-on that transforms a material into a Unity URP shader.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/TFG-MEP/Blender_to_Unity_Material_Export_Plug-in"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/addonUsage.gif"
+                    class="img-fluid"
+                    alt="Project GIF"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Destino Rojo</h3>

@@ -54,7 +54,7 @@ section {
 }
 
 #navbar {
-  background-image: linear-gradient(to right, #3366ff, #ff66cc); /* Color de fondo */
+  background-image: linear-gradient(to right, $header-color1, $header-color2); /* Color de fondo */
   padding: 30px 0; /* Espaciado interno */
   text-align: center; /* Alineación de texto */
 }

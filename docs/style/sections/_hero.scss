@@ -17,9 +17,9 @@
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
-  background: $background-image;
-  background-position: center;
-  background-size: cover;
+  //background: $background-image;
+  //background-position: center;
+  //background-size: cover;
 
   @include respond(tab-port) {
     justify-content: center;

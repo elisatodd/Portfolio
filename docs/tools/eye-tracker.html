@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Eye Tracking Tool</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="./tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+    
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Eye Tracking Tool</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted>
+                            <source src="../assets/DemoEyeTracker.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/EyeTrackerMap.png" class="carousel-image" alt="Project Image 1">
+                        <img src="../assets/EyeTrackerMap2.png" class="carousel-image" alt="Project Image 2">
+                        <img src="../assets/EyeTrackerCalibration.png" class="carousel-image" alt="Project Image 3">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/VideoThumbnail.png" class="thumbnail" alt="Project Video"
+                        onclick="selectImage(1)">
+                    <img src="../assets/EyeTrackerMap.png" class="thumbnail" alt="Project Image 1"
+                        onclick="selectImage(2)">
+                    <img src="../assets/EyeTrackerMap2.png" class="thumbnail" alt="Project Image 2"
+                        onclick="selectImage(3)">
+                    <img src="../assets/EyeTrackerCalibration.png" class="thumbnail" alt="Project Image 2"
+                        onclick="selectImage(4)">
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        Eye Tracker tool with an incorporated video recorder that generates a video file with the
+                        observed points.
+                    </p>
+
+                    <div class="description-columns">
+                        <div class="column">
+                            <h3>Features</h3>
+                            <ul>
+                                <br>
+                                <li>👁️ Calibration system for an accurate performance on each device</li>
+                                <li>🗺️ Can generate heat maps with the most viewed screen zones</li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+                            <h3>Development Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🖥️ Made using Python and TKInter</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://github.com/miriam-m-s/G3_Usabilidad_Pfinal" class="btn">View on GitHub</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="back-btn">
+                <a href="tools.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

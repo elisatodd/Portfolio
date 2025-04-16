@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eli Todd | All Aboard! </title>
+        <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+        
+        <link rel="stylesheet" href="../css/main.css" />
+
+    </head>
+
+    <body>
+        
+        <!-- Navbar with index -->
+        <nav id="navbar">
+            <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="./games.html">Games</a></li>
+            </ul>
+        </nav>
+
+        <section id="project-page">
+            <div class="container">
+                <h1 class="project-title">All Aboard!</h1>
+            
+                <div id="gradient-fade"></div>
+
+                <div class="project-content">
+
+                    <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                            <img src="../assets/AllAboard.png" class="carousel-image" alt="Image 1">
+                        </div>
+                        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+
+                    <!-- Thumbnails Preview -->
+                    <div class="carousel-thumbnails">
+                        <img src="../assets/AllAboard.png" class="thumbnail" alt="Image 1" onclick="selectImage(1)">
+                    </div>
+
+
+                    <div class="project-description">
+                        <p class="description-text">
+                            This is a Unity 3D adaptation of Professor Layton's Toy Train mini game in Unity for my 'Artificial Intelligence for Videogames' course.<br>
+                            The key focus of the project is the implementation of a level solver algorithm that finds the best solution for each game map.
+                        </p>
+
+                        <div class="description-columns">
+                    
+                            <div class="column">
+                                <h3>Development Highlights</h3>
+                                <ul>
+                                    <br>
+                                    <li>⭐ Problem solving with A*</li>
+                                    <li>🎒 Modification of the Traveling Salesman Problem</li>
+                                    <li>📋 Data driven</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a href="https://www.youtube.com/watch?v=pja65GM82mE&ab_channel=ElisaToddRodr%C3%ADguez" class="btn">Project Breakdown</a>
+                        </div>
+        
+                    </div>
+                </div>
+
+                <div class="back-btn">
+                    <a href="./games.html" class="cta-btn">← Back to Projects</a>
+                </div>
+            </div>
+        </section>
+        <script src="../javascript/carousel.js"></script>
+    </body>
+</html>

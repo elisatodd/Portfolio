@@ -105,8 +105,10 @@ Have fun creating your portfolio on this template!!! -->
     <nav id="navbar">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="./tech_art/tech_art.html">Tech Art</a></li>
+        <li><a href="./tools/tools.html">Tools</a></li>
+        <li><a href="./vfx/vfx.html">VFX</a></li>
+        <li><a href="./games/games.html">Games</a></li>
       </ul>
     </nav>
 
@@ -116,10 +118,10 @@ Have fun creating your portfolio on this template!!! -->
                           background-size: cover;">
       <section class="container">
         <h1 class="hero-title">
-          <span class="text-color-main name">Eli Todd's Portfolio
+          <span class="text-color-main name">ELISA TODD
           </span>
           <br/>
-          <span class="job-title">Video Game Programmer and Developer</span>
+          <span class="job-title">Technical Artist<br>VFX & Tools Dev<br>C++ Programmer</span>
           <br/>
         </h1>
         <p class="hero-cta">
@@ -140,18 +142,18 @@ Have fun creating your portfolio on this template!!! -->
           <!-- <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./assets/profile1.jpg"
+              src="./assets/profile.jpg"
               alt="Profile Image"
               width="450"
-              height="350"
+              height="200"
             />
           </div> -->
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Hi! My name is Eli. I'm a Technical Artist and Programmer from Spain with a strong background in computer graphics, real-time rendering, and tools development. I took my university degree in Video Game Development in the Complutense University of Madrid and I'm currently taking a Masters Degree on Technical Art for video games.
+              Hi! My name is Eli. I'm a <b>Technical Artist</b> and Programmer from Spain with a background in computer graphics, real-time rendering, and tools development. I took my university degree in Video Game Development in the Complutense University of Madrid and my masters degree on Technical Art and VFX in Voxel School.
             </p>
             <p class="about-wrapper__info-text">
-              During my university years, I participated in multiple projects, collaborating with artists and designers to create efficient, scalable solutions. I'm passionate about graphics pipelines, automation, and simulation techniques, whether in game engines or VFX production environments.
+              During my university years, I participated in multiple projects and internships, collaborating with artists and designers to create efficient, scalable solutions. I'm passionate about graphics pipelines, automation, and simulation techniques, whether in game engines or VFX production environments.
             </p>
             <span class="about-wrapper__cta">
               <a href="./assets/CV_ElisaTodd.pdf" class="cta-btn cta-btn--resume">View Resume</a>
@@ -162,497 +164,32 @@ Have fun creating your portfolio on this template!!! -->
     </section>
     <!-- /END About Section -->
 
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Blender to Unity material export Add-on</h3>
-              <p class="project-wrapper__text-info">
-                Blender add-on that transforms a material into a Unity URP shader.
-                <br><br>
-                🖥️ Made using Python and HLSL<br>
-                <br>
-                🎨 Mantains the accuracy of procedural textures after exporting<br>
-                <br>
-                📚 Compatible with a large number of Blender nodes and easily extensible<br>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/TFG-MEP/Blender_to_Unity_Material_Export_Plug-in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/addonUsage.gif"
-                    class="img-fluid"
-                    alt="Project GIF"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Eye Tracking Tool</h3>
-              <p class="project-wrapper__text-info">
-                Eye Tracker with an incorporated video recorder that generates a video file with the observed points. 
-                <br><br>
-                🖥️ Made using Python and TKInter<br>
-                <br>
-                👁️ Calibration system for an accurate performance on each device<br>
-                <br>
-                🗺️ Can generate heat maps with the most viewed screen zones<br>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/miriam-m-s/G3_Usabilidad_Pfinal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >View on GitHub</a
-                >
-              </div>
-            </div>
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <video
-                    src="./assets/DemoEyeTracker.mp4"
-                    class="img-fluid"
-                    alt="Project Video"
-                    width="1366"
-                    height="767"
-                    type="video/mp4"
-                    controls autoplay muted>
-                    <source src="assets/DemoEyeTracker.mp4" type="video/mp4">
-                  </video>
-                </div>
-              </a>
-            </div>
-          </article>
-
-        
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Destino Rojo</h3>
-              <p class="project-wrapper__text-info">
-               🎮 3D Unity Game <br>
-               <br>
-               🎉 Made for a 4-day game jam<br>
-               <br>
-               🕵🏻‍♀️ Escape room with a hidden story<br>
-               <br>
-               🖌️ Main roles: graphics programmer, producer, and 3D designer/modeler
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://paula-morillas-alonso.itch.io/destinorojo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See on itch.io</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/DestinoRojo.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Mastermind</h3>
-              <p class="project-wrapper__text-info">
-                Recreation of the classic 'Mastermind' game through Android implementation.<br>
-                <br>
-                🎮 Programmed in Java, using AndroidStudio.<br>
-                <br>
-                📱 Mobile Specific Implementations: Notification, ads, sharing, etc.<br>
-                <br>
-                🧠 Logic / Engine code division.<br>
-                <br>
-                🪙 Customization and reward/monetization system.
-                
-              </p>
-              <!-- <div class="project-wrapper__text-btns">
-                <a href="https://github.com/elisatodd/Mastermind" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div> -->
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Mastermind.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Monkey Delivery</h3>
-              <p class="project-wrapper__text-info">
-                This game was entirely developed in C++ using SDL2 in 2022. <br>
-                It was my first significant group project, where I collaborated with nine other students. 
-                Together, we completed the game within a four month timeframe.<br>
-                <br>
-                🎮 C++ gameplay programming<br>
-                <br>
-                📚 SDL2 used for rendering, input and audio<br>
-                <br>
-                💡 Original idea and design
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://miggon23.github.io/MonkeyDelivery/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See More</a
-                >
-                <a
-                  href="https://github.com/miggon23/MonkeyDelivery"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Monkey2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1920"
-                    height="1080"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Flamingo Game Engine</h3>
-              <p class="project-wrapper__text-info">
-              C++ based video game engine developed in 2022, alongside five other students.<br>
-              Flamingo is a basic game engine crafted to learn the bases of game programming, focusing on 3D rendering and data driven games.<br>
-              It’s designed to support three dimensional RPG games, featuring a main player avatar controlled by user input.<br>
-              <br>
-              🎮 Programmed in C++ 
-              <br>
-              📋 Data driven engine<br>
-              <br>
-              🌉 LUA for scripting via LuaBridge<br>
-              <br>
-              🧌 Rendering with Ogre<br>
-              <br>
-              🔫 Bullet for physics<br>
-              <br>
-              ✏️ SDL for input<br>
-              <br>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/Grupo03Proyectos3/Motor-Grupo3"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Flamingo2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="650"
-                    height="650"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Don't Judge Me</h3>
-              <p class="project-wrapper__text-info">
-              🎮 2D Unity Game <br>
-              <br>
-              🎉 Made for a 3-day game jam<br>
-              <br>
-              🖱️ Point-and-click<br>
-              <br>
-              🏆 Second place overall score!<br>
-              <br>
-              👩🏻‍💻 Main role: gameplay programmer
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://javierxp.itch.io/no-me-juzgues"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See on itch.io</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/NoMeJuzgues2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1511"
-                    height="842"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">A.I.'s Morality</h3>
-              <p class="project-wrapper__text-info">
-              🎮 Serious Game<br>
-              <br>
-              💭 Multiple Endings<br>
-              <br>
-              🖥️ Unity 2D<br>
-              <br>
-              👩🏻‍💻 Main role: gameplay programming
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/elisatodd/JuegosSerios-Grupo5"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Unity Project</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/IA.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1511"
-                    height="842"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Kiwinas Vistas</h3>
-              <p class="project-wrapper__text-info">
-              🎮 Programmed in JavaScript using Phaser3<br>
-              <br>
-              🎉 Made for a 3-day game jam by 2 people<br>
-              <br>
-              🏆 9th place overall score<br>
-              <br>
-              🎨 Main role: 2D artist and gameplay programming
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://elisatodd.itch.io/kiwinas-vistas"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See on itch.io</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/KiwinasVistas.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1511"
-                    height="842"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">All Aboard!</h3>
-              <p class="project-wrapper__text-info">
-                3D adaptation of Professor Layton's Toy Train mini game in Unity for my 'Artificial Intelligence for Videogames' course. <br>
-                The key focus of the project is the implementation of a level solver algorithm.<br>
-                <br>
-                ⭐ Problem solving with A*<br>
-                <br>
-                🎒 Modification of the Traveling Salesman Problem<br>
-                <br>
-                📋 Data driven<br>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://www.youtube.com/watch?v=pja65GM82mE&ab_channel=ElisaToddRodr%C3%ADguez"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See More</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/AllAboard.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1913"
-                    height="1073"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">TRON: local multiplayer</h3>
-              <p class="project-wrapper__text-info">
-                This project was developed in C++ as a replica of the classic 'Tron' arcade game.<br>
-                It was created as part of the ‘Networks and Online Games' course within my degree program.<br>
-                <br>
-                📠 Client-Server model<br>
-                <br>
-                🛜 UDP Communication Protocol<br>
-                <br>
-                🖥️ Binary Serialization<br>
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://github.com/elisatodd/RVRProyectoFinal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Source Code</a
-                >
-                <!-- <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                > -->
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/Tron.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="663"
-                    height="536"
-                  />
-                </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-           
-        </div>
+    <section class="cube-section">
+      <div class="cube">
+        <a href="./tech_art/tech_art.html">
+          <img class="icon" src="./assets/palette1.png" alt="Tech Art">
+          <p class="text">Tech Art</p>
+        </a>
+      </div>
+      <div class="cube">
+        <a href="./tools/tools.html">
+          <img class="icon" src="./assets/wrench.png" alt="Tools">
+          <p class="text">Tools</p>
+        </a>
+      </div>
+      <div class="cube">
+        <a href="./vfx/vfx.html">
+          <img class="icon" src="./assets/sparks2.png" alt="VFX">
+          <p class="text">VFX</p>
+        </a>
+      </div>
+      <div class="cube">
+        <a href="./games/games.html">
+          <img class="icon" src="./assets/controller.png" alt="Games">
+          <p class="text">Games</p>
+        </a>
       </div>
     </section>
-    <!-- End Projects Section -->
 
     <!-- Contact Section -->
     <section id="contact">
@@ -689,14 +226,14 @@ Have fun creating your portfolio on this template!!! -->
           >
             <i class="fa-brands fa-instagram"></i>
           </a> -->
-          <!-- <a
+          <a
             href="#!"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="codepen"
+            aria-label="artstation"
           >
-            <i class="fa-brands fa-codepen"></i>
-          </a> -->
+            <i class="fa-brands fa-artstation"></i>
+          </a>
           <a
             href="http://www.linkedin.com/in/elisa-todd-rodriguez"
             target="_blank"

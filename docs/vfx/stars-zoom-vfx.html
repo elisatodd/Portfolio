@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Stars Shader</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="./vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Zoom in Stars Shader</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <video class="carousel-image" alt="Shader Render" controls autoplay muted loop>
+                            <source src="../assets/vfx/StarsZoomShader.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/vfx/stars-screenshot.png" class="thumbnail" alt="Shader" onclick="selectImage(1)">
+
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        A dynamic GLSL shader that simulates stars growing and expanding from the center of the screen. 
+                        I used math, functions like <b>sin()</b> and <b>smoothstep()</b>, and also optimized the shader 
+                        for different screen sizes, ensuring it looks great on any resolution. 
+                        <br>
+                        <br>
+                        This project highlights my skills in shading, and I love the way it shows how cool maths can look ;)
+                    </p>
+
+                   
+                    <div class="description-columns">
+                        <div class="column">
+                            <h3>Technical Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🧮 Use of trigonometric functions (atan(), sin(), length()) for star positioning and oscillation</li>
+                                <li>🌈 Smooth color blending using smoothstep() and mix()</li>
+                                <li>⌛ Animation control with time-based transitions for star growth</li>
+                                <li>➰ Performance optimization with iterative methods for star calculations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://www.shadertoy.com/view/X3fBzs" class="btn">See Code on ShaderToy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back-btn">
+                <a href="vfx.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

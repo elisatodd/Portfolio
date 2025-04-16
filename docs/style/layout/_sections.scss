@@ -1,3 +1,7 @@
+body {
+  background-color: $dark-grey;
+}
+
 // Section
 section {
   padding: 5rem 0rem;
@@ -33,7 +37,7 @@ section {
   width: 100%;
   padding: 0 1.5rem;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1350px;
   @include respond(tab-land) {
     max-width: 960px;
     width: 100%;
@@ -54,9 +58,12 @@ section {
 }
 
 #navbar {
-  background-image: linear-gradient(to right, $header-color1, $header-color2); /* Color de fondo */
-  padding: 30px 0; /* Espaciado interno */
+  //background-image: linear-gradient(135deg, #40E0D0, #bc4bd8, #d83e8b);
+  background-image: linear-gradient(135deg,  #e03d9c, #40E0D0 150%);
+  padding: 15px;
   text-align: center; /* Alineación de texto */
+  z-index: 5;
+  align-items: center;
 }
 
 #navbar ul {
@@ -67,7 +74,7 @@ section {
 
 #navbar li {
   display: inline-block; /* Muestra los elementos en línea */
-  margin-right: 20px; /* Espaciado entre elementos */
+  margin-right: 50px; /* Espaciado entre elementos */
 }
 
 #navbar li:last-child {
@@ -75,12 +82,112 @@ section {
 }
 
 #navbar a {
+  font-family: Lexend;
   color: $header-text; /* Color del texto */
   text-decoration: none; /* Quita el subrayado de los enlaces */
   font-size: 30px; /* Tamaño del texto */
-  font-weight: bold; /* Peso de la fuente */
+  font-weight: 200; /* Peso de la fuente */
 }
 
 #navbar a:hover {
-  color:$header-hover; /* Cambia el color del texto al pasar el ratón */
+  color: #3333339c;
+  font-weight: 400;
+}
+
+
+// Section navigation cubes
+
+$cube-size: 150px;
+$spacing: 80px;  // Space between cubes
+
+.cube-section {
+  display: flex;
+  justify-content: center;  // Centers the cubes horizontally
+  gap: $spacing;  // Adds the spacing between the cubes
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;  // Optional: To limit the width of the section (can adjust)
+  margin: 0 auto;  // Centers the section within the screen
+  flex-wrap: wrap;  // Allows the cubes to wrap to the next line on smaller screens
+  box-sizing: border-box;
+  height: 350px;
+  margin-top: 100px;
+}
+
+.cube {
+  align-items: center;
+  align-content: center;
+
+  width: $cube-size;
+  height: $cube-size;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: $spacing;  // Margin at the bottom for better spacing when wrapping
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(245, 52, 158, 0.274);
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #d83e8b;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+
+    .text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .cube-section {
+    display: flex;
+    flex-direction: row;  // Stack the cubes vertically
+    align-items: center;  // Center the cubes in the column layout
+    gap: 15px;  // Adjust the space between cubes for smaller screen
+  }
+
+  .cube {
+    //width: 100%;  // Make each cube take the full width on smaller screens
+    max-width: 300px;  // Limit the width of each cube
+    height: auto;  // Allow height to adjust based on content
+    margin-bottom: 15px;  // Adjust bottom margin
+  }
+
+  .text {
+    font-size: 14px;  // Adjust text size for smaller screens
+  }
+
+  .icon {
+    width: 40px;  // Reduce the icon size on smaller screens
+    height: 40px;
+  }
 }

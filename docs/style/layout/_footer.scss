@@ -1,5 +1,11 @@
 .footer {
   background-color: $dark-grey;
+  
+
+
+  // background: linear-gradient(135deg,  #e03d9c, #40E0D0 150%);
+  // clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+
   padding: 4.8rem 0;
   &__text {
     font-size: 1.3rem;
@@ -29,14 +35,14 @@
   justify-content: center;
 
   a {
-    font-size: 3rem;
+    font-size: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: $white-color;
-    width: 5rem;
+    width: 10rem;
     height: 5rem;
-    margin: $default-font-size $default-font-size;
+    margin: 50px 20px;
     transition: all ease 0.2s;
     i {
       transition: all ease-in-out 0.2s;
@@ -50,10 +56,16 @@
         color: #c13584;
       }
       .fa-linkedin {
-        color: #4875b4;
+        color: #709edf;
       }
       .fa-codepen {
         color: #212121;
+      }
+      .fa-github {
+        color: #d696f3;
+      }
+      .fa-artstation {
+        color: #e4b0db;
       }
     }
   }

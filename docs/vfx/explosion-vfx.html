@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Stylized Explosion</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="./vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Stylized Dust Explosion</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <video class="carousel-image" alt="VFX Render" controls autoplay muted loop>
+                            <source src="../assets/vfx/Explosion_VFX.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/ExplosionNS.png" class="carousel-image" alt="Niagara Breakdown">
+                        <video class="carousel-image" alt="VFX cinematic" controls autoplay muted loop>
+                            <source src="../assets/vfx/Hero_VFX.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/ExplosionTorusMat.png" class="carousel-image" alt="Material Breakdown">
+                        <video class="carousel-image" alt="shockwave" controls autoplay muted loop>
+                            <source src="../assets/vfx/Shockwave.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/floor_crack.png" class="carousel-image" alt="Floor Crack Breakdown">
+                        <img src="../assets/vfx/FloorCrackMat.png" class="carousel-image" alt="Floor Crack Material">
+                        <img src="../assets/vfx/FloorCrackSubstance.png" class="carousel-image" alt="Floor Crack Substance">
+                    </div>
+
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    
+                    <img src="../assets/vfx/explosion.png" class="thumbnail" alt="VFX Render" onclick="selectImage(1)">
+                    <img src="../assets/vfx/ExplosionNS.png" class="thumbnail" alt="Niagara Breakdown"
+                        onclick="selectImage(2)">
+                    <img src="../assets/vfx/HeroThumbnail.png" class="thumbnail" alt="Cinematic"
+                        onclick="selectImage(3)">
+                    <img src="../assets/vfx/ExplosionTorusMat.png" class="thumbnail" alt="Material Breakdown" 
+                            onclick="selectImage(4)">
+                    <img src="../assets/vfx/ShockwaveThumbnail.png" class="thumbnail" alt="Floor Crack Breakdown" 
+                        onclick="selectImage(5)">
+                    <img src="../assets/vfx/floor_crack.png" class="thumbnail" alt="Floor Crack Breakdown" onclick="selectImage(6)">
+                    <img src="../assets/vfx/FloorCrackMat.png" class="thumbnail" alt="Floor Crack Material" onclick="selectImage(7)">
+                    <img src="../assets/vfx/FloorCrackSubstance.png" class="thumbnail" alt="Floor Crack Substance" onclick="selectImage(8)">
+
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        Real-time stylized explosion created for my master's in Technical Art & VFX, using Unreal Engine 5 and Niagara. 
+                        I focused on making the effect feel dynamic and impactful, with smooth timing and well-defined shapes to keep it readable in motion. 
+                        The explosion features custom sprite-based smoke, sparks, debris, and a satisfying shockwave. 
+                        <br>
+                        <br>
+                        I used this explosion for a small super-hero themed cinematic alongside some other effects.
+                        <br>
+                        <br>
+                        I had a lot of fun experimenting with timing, layering, and color to get that punchy, game-ready look. Hope you like it! 🔥🤯
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="https://www.artstation.com/artwork/V2YLe8" class="btn">See on Artstation</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="back-btn">
+                <a href="vfx.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

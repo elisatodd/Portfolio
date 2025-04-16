@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eli Todd | Mastermind</title>
+        <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+        
+        <link rel="stylesheet" href="../css/main.css" />
+
+    </head>
+
+    <body>
+        
+        <!-- Navbar with index -->
+        <nav id="navbar">
+            <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="./games.html">Games</a></li>
+            </ul>
+        </nav>
+
+        <section id="project-page">
+            <div class="container">
+                <h1 class="project-title">Mastermind</h1>
+            
+                <div id="gradient-fade"></div>
+
+                <div class="project-content">
+
+                    <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                        <div class="carousel-images">
+                            <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                            <img src="../assets/Mastermind.png" class="carousel-image" alt="Image 1">
+                        </div>
+                        <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                    </div>
+
+                    <!-- Thumbnails Preview -->
+                    <div class="carousel-thumbnails">
+                        <img src="../assets/Mastermind.png" class="thumbnail" alt="Image 1" onclick="selectImage(1)">
+                    </div>
+
+
+                    <div class="project-description">
+                        <p class="description-text">
+                            This project is a recreation of the classic 'Mastermind' game through Android implementation.
+                        </p>
+
+                        <div class="description-columns">
+                    
+                            <div class="column">
+                                <h3>Development Highlights</h3>
+                                <ul>
+                                    <br>
+                                    <li>🎮 Programmed in Java, using AndroidStudio</li>
+                                    <li>📱 Mobile Specific Implementations: Notification, ads, sharing, etc</li>
+                                    <li>🧠 Logic / Engine code division</li>
+                                    <li>🪙 Customization and reward/monetization system</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <div class="project-buttons">
+                            <a href="https://miggon23.github.io/MonkeyDelivery/" class="btn">See More!</a>
+                        </div> -->
+        
+                    </div>
+                </div>
+
+                <div class="back-btn">
+                    <a href="./games.html" class="cta-btn">← Back to Projects</a>
+                </div>
+            </div>
+        </section>
+        <script src="../javascript/carousel.js"></script>
+    </body>
+</html>

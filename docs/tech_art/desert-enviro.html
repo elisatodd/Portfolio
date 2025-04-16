@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Desert Environment – Unreal Engine</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="./tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+    
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Desert Environment – Unreal Engine</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <img src="../assets/tech-art/desert3.png" class="carousel-image" alt="Desert Enviro">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted>
+                            <source src="../assets/tech-art/LevelSequence.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/tech-art/desert2.png" class="carousel-image" alt="Desert Enviro 2">
+                        <img src="../assets/tech-art/desert1.png" class="carousel-image" alt="Desert Enviro 3">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted>
+                            <source src="../assets/tech-art/ExplicacionMateriales.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/tech-art/desert3.png" class="thumbnail" alt="Project Image"
+                        onclick="selectImage(1)">
+                    <img src="../assets/tech-art/DesertThumbnbail.png" class="thumbnail" alt="Project Video"
+                        onclick="selectImage(2)">
+                    <img src="../assets/tech-art/desert2.png" class="thumbnail" alt="Project Image 2"
+                        onclick="selectImage(3)">
+                    <img src="../assets/tech-art/desert1.png" class="thumbnail" alt="Project Image 3"
+                        onclick="selectImage(4)">
+                    <img src="../assets/tech-art/desert-tutorial.png" class="thumbnail" alt="Project Video Tutorial"
+                        onclick="selectImage(5)">
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        For this semi-realistic desert environment, I put the focus on creating a flexible master material setup. 
+                        The <b>master material</b> is fully parametrized and adapts to all props and assets in the scene. <br>
+                        I also constructed a layered <b>landscape material</b> with a puddle painting feature, 
+                        to add wet areas and visual contrast in the landscape. 
+                        It was designed for modularity and easy customization across assets and terrain in an environment.
+                    </p>
+
+                    <div class="description-columns">
+                        <div class="column">
+                            <h3>Features</h3>
+                            <ul>
+                                <br>
+                                <li>🧱 Master materials for props and modular assets</li>
+                                <li>🌄 Layered landscape material</li>
+                                <li>💧 Puddle painting feature with blending</li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+                            <h3>Development Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🎛️ Fully parameterized materials</li>
+                                <li>✏️ Custom vertex painting controls</li>
+                                <li>⚙️ Optimized for performance and scalability</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project-buttons">
+                        <a href="https://github.com/miriam-m-s/G3_Usabilidad_Pfinal" class="btn">View on ArtStation</a>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+            <div class="back-btn">
+                <a href="tech_art.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

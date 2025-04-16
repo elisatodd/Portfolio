@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Procedural Road Generator</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="./tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+    
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Procedural Road Generator</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <img src="../assets/tech-art/PCGRoad.png" class="carousel-image" alt="Project Image">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted loop>
+                            <source src="../assets/tech-art/RoadSequence.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/tech-art/PCGRoad2.png" class="carousel-image" alt="Project Image 2">
+                        <video class="carousel-image" alt="Project Video Tutorial" controls autoplay muted loop>
+                            <source src="../assets/tech-art/VideoExplicativo_PCG.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/tech-art/PCGRoad.png" class="thumbnail" alt="Project Image"
+                    onclick="selectImage(1)">
+                    <img src="../assets/tech-art/PCG-thumbnail.png" class="thumbnail" alt="Project Video"
+                        onclick="selectImage(2)">
+                    <img src="../assets/tech-art/PCGRoad2.png" class="thumbnail" alt="Project Image 2"
+                        onclick="selectImage(3)">
+                    <img src="../assets/tech-art/PCG-thumbnail2.png" class="thumbnail" alt="Tutorial Video"
+                        onclick="selectImage(4)">
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        I made a fully procedural PCG tool for generating roads in Unreal Engine 5.
+                        I wanted to achieve a tool that could modify and cut through any landscape, including mountains, 
+                        to make road placing for an environment or game map an easy procedure.
+                        <br><br>
+                        I used <b>landscape modifiers</b> and splines to carve paths, <b>spline meshes</b> to adds guardrails and support columns where needed, 
+                        and I also adapted the <b>landscape material</b> to reveal interior rock on vertical cuts. 
+                        To finish it all up and add a richer look to the environment, I added a foliage PCG to populate the scene with trees and plants along the spawned road.
+                        <br>
+                        <br>
+                        This project helped me learn a lot about Unreals PCGs and procedurally generated content in general!
+                    </p>
+
+                    <div class="description-columns">
+                        <div class="column">
+                            <h3>Features</h3>
+                            <ul>
+                                <br>
+                                <li>🛣️ PCG-based road generation</li>
+                                <li>🔀 Spline mesh roads with adjustable size</li>
+                                <li>🛡️ Dynamic guardrails and support columns</li>
+                                <li>🌳 Foliage placement with PCG</li>
+                            </ul>
+                        </div>
+
+                        <div class="column">
+                            <h3>Development Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🧩 Landscape Modifier + PCG workflow</li>
+                                <li>⛏️ Automatic landscape carving and material blending</li>
+                                <li>🎛️ Fully parameterized for easy customization</li>
+                                <li>🧰 Modular and artist-friendly</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://github.com/miriam-m-s/G3_Usabilidad_Pfinal" class="btn">View on ArtStation</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- <div class="back-btn">
+                <a href="tech_art.html" class="cta-btn">← Back to Projects</a>
+            </div> -->
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

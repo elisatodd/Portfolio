@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Magic Sword Charge Effect</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="./vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Magic Sword Charge Effect</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <video class="carousel-image" alt="VFX Render" controls autoplay muted loop>
+                            <source src="../assets/vfx/sword_VFX.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/sword-niagara.png" class="carousel-image" alt="Niagara Breakdown">
+                        <video class="carousel-image" alt="VFX Breakdown Render" controls autoplay muted loop>
+                            <source src="../assets/vfx/sword-breakdown1.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/charge-material.png" class="carousel-image" alt="Charge Material Breakdown">
+                        <video class="carousel-image" alt="Sword Material" controls autoplay muted loop>
+                            <source src="../assets/vfx/sword-material.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/vfx/sword-material.png" class="carousel-image" alt="Sword Material Breakdown">
+                    </div>
+
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    
+                    <img src="../assets/vfx/sword.png" class="thumbnail" alt="VFX Render" onclick="selectImage(1)">
+                    <img src="../assets/vfx/sword-niagara.png" class="thumbnail" alt="Niagara Breakdown"
+                        onclick="selectImage(2)">
+                    <img src="../assets/vfx/charge-thumbnail.png" class="thumbnail" alt="Niagara Breakdown"
+                        onclick="selectImage(3)">
+                    <img src="../assets/vfx/charge-material.png" class="thumbnail" alt="Charge Material Breakdown" 
+                            onclick="selectImage(4)">
+                    <img src="../assets/vfx/sword-material-thumbnail.png" class="thumbnail" alt="Charge Material Breakdown" 
+                        onclick="selectImage(5)">
+                    <img src="../assets/vfx/sword-material.png" class="thumbnail" alt="Sword Material Breakdown" onclick="selectImage(6)">
+
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        This is a real-time VFX I created for my master's degree in <b>Technical Art & VFX</b>. 
+                        It was made in <b>Unreal Engine 5</b>, using <b>Niagara</b> and custom materials to simulate a sword charging up with energy.
+                        <br>
+                        <br>
+                        This effect was inspired by <i>Blasphemous</i> by The Game Kitchen, one of my favorite video games. 
+                        I wanted to capture their dark and powerful energy, translating it into a completely different art style.
+                        <br>
+                        <br>
+                        🗡 <b>Credits:</b> The sword model is the Mea Culpa from Blasphemous, sourced from Sketchfab. 
+                        Original model by Dalopera3D - <a href="https://sketchfab.com/3d-models/mea-culpa-sword-5c2a7df62ee040d39687f873631c5830">Sketchfab</a>. 
+                        This project focuses solely on the VFX work.
+                    </p>
+
+                    <div class="project-buttons">
+                        <a href="https://www.artstation.com/artwork/JrJwmd" class="btn">See on Artstation</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="back-btn">
+                <a href="vfx.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

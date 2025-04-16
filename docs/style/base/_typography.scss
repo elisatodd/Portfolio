@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+// IMPORT GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Monofett&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=VT323&display=swap');
+
 h1 {
   font-weight: 700;
 }
@@ -31,6 +33,7 @@ a:hover {
 
 .text-color-main {
   margin-left: 1rem;
+  font-weight: bold;
   @include supportColorForIE11();
 
   @include respond(phone) {

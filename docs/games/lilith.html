@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Lilith: Rise of the Fallen</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="../tech_art/tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="./games.html">Games</a></li>
+        </ul>
+    </nav>
+
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Lilith: Rise of the Fallen</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <img src="../assets/Lilith/Lilith.png" class="carousel-image" alt="Image 0">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted loop >
+                            <source src="../assets/Lilith/LilithTechArtShowcase.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/Lilith/Lilith02.png" class="carousel-image" alt="Image 1">
+                        <img src="../assets/Lilith/Lilith03.png" class="carousel-image" alt="Image 2">
+                        <img src="../assets/Lilith/Lilith04.png" class="carousel-image" alt="Image 3">
+                        <img src="../assets/Lilith/Lilith05.png" class="carousel-image" alt="Image 4">
+                        <img src="../assets/Lilith/Lilith15.png" class="carousel-image" alt="Image 5">
+                        <img src="../assets/Lilith/Lilith21.png" class="carousel-image" alt="Image 6">
+                        <img src="../assets/Lilith/Lilith22.png" class="carousel-image" alt="Image 7">
+                        <img src="../assets/Lilith/Lilith24.png" class="carousel-image" alt="Image 8">
+
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/Lilith/Lilith.png" class="thumbnail" alt="Image 1" onclick="selectImage(1)">
+                    <img src="../assets/Lilith/LilithCover.png" class="thumbnail" alt="Image 1" onclick="selectImage(2)">
+                    <img src="../assets/Lilith/Lilith02.png" class="thumbnail" alt="Image 1" onclick="selectImage(3)">
+                    <img src="../assets/Lilith/Lilith03.png" class="thumbnail" alt="Image 2" onclick="selectImage(4)">
+                    <img src="../assets/Lilith/Lilith04.png" class="thumbnail" alt="Image 3" onclick="selectImage(5)">
+                    <img src="../assets/Lilith/Lilith05.png" class="thumbnail" alt="Image 4" onclick="selectImage(6)">
+                    <img src="../assets/Lilith/Lilith15.png" class="thumbnail" alt="Image 5" onclick="selectImage(7)">
+                    <img src="../assets/Lilith/Lilith21.png" class="thumbnail" alt="Image 6" onclick="selectImage(8)">
+                    <img src="../assets/Lilith/Lilith22.png" class="thumbnail" alt="Image 7" onclick="selectImage(9)">
+                    <img src="../assets/Lilith/Lilith24.png" class="thumbnail" alt="Image 8" onclick="selectImage(10)">
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        <b><i>Lilith: Rise of the Fallen</i></b> is a survivor-like game with rogue-lite elements that combines combat against hordes 
+                        of enemies with taking control of the map, affecting both gameplay and visuals of the game.
+                        The constant presence of different abilities, enemies, and their interaction with the scenery and the user make 
+                        the game heavily rely on <b>technical art related tasks</b>.
+                        <br>
+                        <br>
+                        The main gameplay mechanic in Lilith consists on <b>corrupting the map</b>, painting the environment dynamically in a Splatoon-like way.
+                        To make this come to life, we used <b>Render Targets</b> alongside other technical art techniques which you can check out on this 
+                        page entry {insert link}.
+                    </p>
+
+                    <div class="description-columns">
+
+                        <div class="column">
+                            <h3>Development Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🎮 Main roles: <b>Technical Artist</b>, VFX artist, Programming Assistant</li>
+                                <li>🟣 Devolopment of the <b>corruption</b> gameplay mechanic</li>
+                                <li>✨ Development of the <b>VFX</b> for the player and enemies abilities</li>
+                                <li>⚙️ GPU <b>Optimization</b> work</li>
+                                <li>🎨 Integration of assets into the game</li>
+                                <li>🫂 Close work with art, design and programming teams</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-buttons">
+                        <a href="https://store.steampowered.com/app/3587510/Lilith_Rise_of_the_Fallen/" class="btn">Wishlist on Steam</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="back-btn">
+                <a href="./games.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>

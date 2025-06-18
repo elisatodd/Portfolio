@@ -110,8 +110,9 @@ $spacing: 80px;  // Space between cubes
   margin: 0 auto;  // Centers the section within the screen
   flex-wrap: wrap;  // Allows the cubes to wrap to the next line on smaller screens
   box-sizing: border-box;
-  height: 350px;
-  margin-top: 100px;
+ // height: 350px;
+ //min-height: 350px;
+  //margin-top: 100px;
 }
 
 .cube {
@@ -128,13 +129,13 @@ $spacing: 80px;  // Space between cubes
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: $spacing;  // Margin at the bottom for better spacing when wrapping
+  //margin-bottom: $spacing;  // Margin at the bottom for better spacing when wrapping
 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(245, 52, 158, 0.274);
+    box-shadow: 0 6px 12px rgba(158, 52, 245, 0.274);
   }
 
   a {
@@ -150,13 +151,15 @@ $spacing: 80px;  // Space between cubes
     transition: color 0.3s ease;
 
     &:hover {
-      color: #d83e8b;
+      color: #786197;
     }
 
     .icon {
       width: 80px;
       height: 80px;
       object-fit: contain;
+      display: block;
+      filter: invert(1) sepia(1) saturate(10000%) hue-rotate(190deg) brightness(0.65);
     }
 
     .text {

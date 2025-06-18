@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eli Todd | Burn Expansion</title>
+    <link rel="icon" type="image/png" href="../assets/devfolio-logo.png" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<body>
+    <!-- Navbar with index -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="./tech_art.html">Tech Art</a></li>
+            <li><a href="../tools/tools.html">Tools</a></li>
+            <li><a href="../vfx/vfx.html">VFX</a></li>
+            <li><a href="../games/games.html">Games</a></li>
+        </ul>
+    </nav>
+    
+    <section id="project-page">
+        <div class="container">
+            <h1 class="project-title">Burn Expansion Shader</h1>
+
+            <div id="gradient-fade"></div>
+
+            <div class="project-content">
+
+                <!-- <img src="../assets/addonUsage.gif" alt="Blender to Unity Add-on Preview" class="project-image"> -->
+                <div class="carousel">
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="carousel-images">
+                        <img src="../assets/Transparent.png" class="carousel-image" alt="-">
+                        <video class="carousel-image" alt="Project Video" controls autoplay muted loop style="pointer-events: none;">
+                            <source src="../assets/Burn/BurnEffect.mp4" type="video/mp4">
+                        </video>
+                        <img src="../assets/Burn/image6.gif" class="carousel-image" alt="Gif">
+                        <img src="../assets/Burn/image8.gif" class="carousel-image" alt="Gif">
+                    </div>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+
+                <!-- Thumbnails Preview -->
+                <div class="carousel-thumbnails">
+                    <img src="../assets/Burn/BurnEffect.png" class="thumbnail" alt="Project GIF"
+                        onclick="selectImage(1)">
+                    <img src="../assets/Burn/image6.png" class="thumbnail" alt="Project GIF 2"
+                        onclick="selectImage(2)">
+                    <img src="../assets/Burn/image2.png" class="thumbnail" alt="Project GIF 3"
+                        onclick="selectImage(3)">
+                </div>
+
+
+                <div class="project-description">
+                    <p class="description-text">
+                        This project showcases a dynamic burning effect implemented in Unreal Engine 5 using <b>Runtime Virtual Textures</b> (RVT).
+                        When a projectile hits the terrain, a Blueprint actor is spawned that controls an expanding burn area. 
+                        The expansion is fully parameterized, allowing precise control over the burn radius and growth speed. 
+                        <br>
+                        <br>
+                        The core shader acts as a <b>mask</b> that progressively reveals three distinct layers: burning, burnt, and dissolved, simulating the state 
+                        of the terrain and the underlying foliage as the fire spreads. This shader is written into a RVT that the foliage and terrain materials
+                        read and interpret accordingly.
+                        <br>
+                        <br>
+                        The effect combines shader programming with Blueprint logic to create a visually rich, 
+                        performant, and customizable environment interaction.
+                    </p>
+
+
+
+                    <div class="description-columns">
+                        <div class="column">
+                            <h3>Development Highlights</h3>
+                            <ul>
+                                <br>
+                                <li>🖼️ <b>Runtime Virtual Texture</b> Integration</li>
+                                <li>🕳️ Multi-layer <b>Shader Mask</b></li>
+                                <li>⛰️ Procedural Terrain Interaction</li>
+                            </ul>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="project-buttons">
+                        <a href="https://github.com/miriam-m-s/G3_Usabilidad_Pfinal" class="btn">View on ArtStation</a>
+                    </div> -->
+
+                </div>
+
+            </div>
+
+            <div class="back-btn">
+                <a href="tech_art.html" class="cta-btn">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/carousel.js"></script>
+</body>
+
+</html>
